@@ -1,0 +1,11 @@
+[ondemand]
+  sqls = [
+    "UPDATE mst_shop SET status = '3' WHERE created = '2017-08-12'"
+    "DELETE FROM mst_shop WHERE status = '9'"
+  ]
+
+[scheduled]
+  period = "10s"
+  sqls = [
+    "UPDATE mst_item SET status = '2' WHERE status = '1'"
+  ]
